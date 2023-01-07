@@ -1,4 +1,5 @@
-import { prepareInput, you } from "./rockPaperScissors";
+import { you } from "./rockPaperScissors";
+import { prepareInput } from "../utils";
 
 //A=Rock, B=Paper, C=Scissors
 //X=loose, Y=draw, Z=win

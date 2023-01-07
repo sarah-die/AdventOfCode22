@@ -1,4 +1,4 @@
-import fs from "fs";
+import {prepareInput} from "../utils";
 
 //A=Rock, B=Paper, C=Scissors
 //X=Rock, Y=Paper, Z=Scissors
@@ -34,13 +34,4 @@ export function calcPoints(score: me): number {
     case "Z":
       return 3;
   }
-}
-
-export function readFile(file: string): string {
-  const fileContent = fs.readFileSync(file);
-  return fileContent.toString();
-}
-
-export function prepareInput(file: string): string[] {
-  return readFile(file).split("\n");
 }
